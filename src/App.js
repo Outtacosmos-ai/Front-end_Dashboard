@@ -7,8 +7,8 @@ import Dashboard from './components/Dashboard';
 import Orders from './components/Orders';
 import Products from './components/Products';
 import Categories from './components/Categories';
-import Reviews from './components/Reviews';
 import Admin from './components/Admin';
+import Reviews from './components/Reviews';
 import './App.css';
 
 function App() {
@@ -22,8 +22,10 @@ function App() {
           <Route path="/orders" element={<Orders />} />
           <Route path="/products" element={<Products />} />
           <Route path="/categories" element={<Categories />} />
-          <Route path="/reviews" element={<Reviews />} />
           <Route path="/admin" element={<Admin />} />
+          <Route path="/*" element={<Dashboard />} status={404} />
+          <Route path="/reviews" element={<Reviews />} />
+
         </Routes>
       </div>
     </Router>

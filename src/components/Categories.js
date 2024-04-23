@@ -1,4 +1,3 @@
-// src/components/Categories.js
 import React, { useState } from 'react';
 
 function Categories() {

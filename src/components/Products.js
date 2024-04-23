@@ -1,4 +1,3 @@
-// src/components/Products.js
 import React, { useState } from 'react';
 
 function Products() {
